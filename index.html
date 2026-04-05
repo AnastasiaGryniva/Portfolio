@@ -20,36 +20,48 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="logo">
-                        <p class="logo__text">
+                        <a href="#" class="logo__text">
                             ORLOV
-                        </p>
+                        </a>
                     </div>
 
-                    <ul class="header__menu">
-                        <li class="header_item">
-                            <a href="#projects" class="header__link">
-                                портфолио
-                            </a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#competencies" class="header__link">
-                                компетенции
-                            </a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#services" class="header__link">
-                                услуги
-                            </a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#contacts" class="header__link">
-                                контакты
-                            </a>
-                        </li>
-                    </ul>
+                    <nav class="header__menu">
+                        <a href="#projects" class="header__link"> портфолио </a>
+                        <a href="#competencies" class="header__link"> компетенции </a>
+                        <a href="#services" class="header__link"> услуги </a>
+                        <a href="#contacts" class="header__link"> контакты </a>
+                    </nav>
+
+                    <div class="js-burger-btn burger-btn"></div>
                 </div>
             </div>
         </header>
+
+        <div class="js-burger burger">
+            <div class="js-burger__content burger__content">
+                <div class="burger-header__wrapper">
+                    <div class="burger-logo">
+                        <a href="#" class="burger-logo__text">
+                            ORLOV
+                        </a>
+                    </div>
+
+                    <nav class="burger-header__menu">
+                        <a href="#projects" class="burger-header__link"> портфолио </a>
+                        <a href="#competencies" class="burger-header__link"> компетенции </a>
+                        <a href="#services" class="burger-header__link"> услуги </a>
+                        <a href="#contacts" class="burger-header__link"> контакты </a>
+                    </nav>
+
+                    <div class="burger-header__contact">
+                        <p class="burger-header__contact-text">для связи:</p>
+                        <a href="#" class="burger-header__contact-link">telegram</a>
+                        <a href="mailto:mail" class="burger-header__contact-link">mail</a>
+                        <a href="#" class="burger-header__contact-link">instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="hero">
             <div class="container">
@@ -58,7 +70,7 @@
                     престиж компании и позволяют выделиться на фоне конкурентов
                 </p>
                 <h1 class="hero__title">
-                    Привет, я Саша — фронтенд разарботчик и дизайнер сайтов
+                    Привет, я Саша — фронтенд разработчик и дизайнер сайтов
                 </h1>
             </div>
         </section>
@@ -69,34 +81,34 @@
             <div class="container">
                 <h2 id="projects" class="projects__title">Смотреть все проекты</h2>
 
-                <div class="project__wrapper">
-                    <div class="project">
-                        <h3 class="project__title">
-                            Realhome
-                        </h3>
-                        <p class="project__text">
-                            дизайн,верстка,настройка
-                        </p>
-                    </div>
+                <ul class="projects__wrapper">
+                    <li class="project project--realhome">
+                        <span class="project__item"> дизайн интерьера</span>
 
-                    <div class="project">
-                        <h3 class="project__title">
-                            GLASS
-                        </h3>
-                        <p class="project__text">
-                            разработка интерфейса
-                        </p>
-                    </div>
+                        <div class="project__text-wrapper">
+                            <h3 class="project__title"> Realhome </h3>
+                            <p class="project__text"> дизайн,верстка,настройка </p>
+                        </div>
+                    </li>
 
-                    <div class="project">
-                        <h3 class="project__title">
-                            Fesiyen
-                        </h3>
-                        <p class="project__text">
-                            разработка интерфейса
-                        </p>
-                    </div>
-                </div>
+                    <li class="project project--glass">
+                        <span class="project__item"> презентация продукта</span>
+
+                        <div class="project__text-wrapper">
+                            <h3 class="project__title"> GLASS </h3>
+                            <p class="project__text"> разработка интерфейса </p>
+                        </div>
+                    </li>
+
+                    <li class="project project--fesiyen">
+                        <span class="project__item"> заказ путешествий </span>
+
+                        <div class="project__text-wrapper">
+                            <h3 class="project__title"> Fesiyen </h3>
+                            <p class="project__text"> разработка интерфейса </p>
+                        </div>
+                    </li>
+                </ul>
 
                 <button class="project__btn">
                     Смотреть все проекты
@@ -110,111 +122,120 @@
                     Мои компетенции
                 </h2>
 
-                <div class="competencie__wrapper">
-                    <div class="competence">
+                <ul class="competencies__wrapper">
+                    <li class="competence">
                         <img src="./resurs/HTML.png" alt="html" class="competence__icon">
-                        <h3 class="competence__titile">HTML и CSS</h3>
+                        <h3 class="competence__title">HTML и CSS</h3>
                         <p class="competence__text">
                             это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы,
                             а также применять стили к этим документам на CSS, является обязательным навыком для каждого
                             фронтенд разработчика.
                         </p>
-                    </div>
+                    </li>
 
-                    <div class="competence">
+                    <li class="competence">
                         <img src="./resurs/JavaScript.png" alt="JavaScript" class="competence__icon">
-                        <h3 class="competence__titile">JavaScript</h3>
+                        <h3 class="competence__title">JavaScript</h3>
                         <p class="competence__text">
                             это язык программирования, который используется для создания
                             динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик
                             должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными
                             запросами и манипуляцией данными на стороне клиента.
                         </p>
-                    </div>
+                    </li>
 
-                    <div class="competence">
+                    <li class="competence">
                         <img src="./resurs/adaptive.png" alt="frameworks" class="competence__icon">
-                        <h3 class="competence__titile">Работа с библиотеками и фреймворками</h3>
+                        <h3 class="competence__title">Работа с библиотеками и фреймворками</h3>
                         <p class="competence__text">
                             фронтенд разработчики должны быть знакомы с различными библиотеками
                             и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые
                             решения, адаптировать их под нужды проекта и расширять их функциональность, является очень
                             важным навыком.
                         </p>
-                    </div>
+                    </li>
 
-                    <div class="competence">
+                    <li class="competence">
                         <img src="./resurs/frameworks.png" alt="adaptive" class="competence__icon">
-                        <h3 class="competence__titile">Разработка для мобильных устройств и адаптивная верстка</h3>
+                        <h3 class="competence__title">Разработка для мобильных устройств и адаптивная верстка</h3>
                         <p class="competence__text">
                             фронтенд разработчики должны быть знакомы с различными библиотеками
                             и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые
                             решения, адаптировать их под нужды проекта и расширять их функциональность, является очень
                             важным навыком.
                         </p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section class="services">
             <div class="container">
-                <h3 id="services" class="services_titile">
+                <h2 id="services" class="services__title">
                     Помогаю реализовать широкий спектр задач
-                </h3>
+                </h2>
 
-                <div class="service__wrapper">
+                <ul class="service__wrapper">
 
-                    <div class="service">
+                    <li class="service">
                         <img src="./resurs/Development.png" alt="Development" class="service__img">
                         <div class="service__base">
-                            <h2 class="service__title">Разработка сайта под ключ</h2>
-                            <p class="service__text">
-                                Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения
-                                бизнес-задач
-                            </p>
-                            <p class="service__text">
-                                Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь
-                                совершит целевое действие
-                            </p>
-                        </div>
-                    </div>
+                            <h3 class="service__title">Разработка сайта под ключ</h3>
 
-                    <div class="service">
+                            <div class="service__text-wrapper">
+                                <p class="service__text">
+                                    Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения
+                                    бизнес-задач
+                                </p>
+                                <p class="service__text">
+                                    Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее
+                                    пользователь
+                                    совершит целевое действие
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="service">
                         <img src="./resurs/Layout.png" alt="Layout" class="service__img">
                         <div class="service__base">
-                            <h2 class="service__title">Верстка сайтов</h2>
+                            <h3 class="service__title">Верстка сайтов</h3>
                             <p class="service__text">
                                 Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд
                                 разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта
                             </p>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="service">
+                    <li class="service">
                         <img src="./resurs/interface.png" alt="interface" class="service__img">
                         <div class="service__base">
-                            <h2 class="service__title">Разработка мобильного интерфейса</h2>
+                            <h3 class="service__title">Разработка мобильного интерфейса</h3>
                             <p class="service__text">
                                 Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд
                                 разработчик может помочь создать динамический и удобный пользовательский интерфейс для
                                 вашего сайта или приложения.
                             </p>
                         </div>
-                    </div>
+                    </li>
 
-                </div>
+                </ul>
             </div>
         </section>
 
         <section id="contacts" class="contacts">
             <div class="contact">
-                <div class="contact__wrapper">
-                    <p class="contact__text">для связи:</p>
-                    <a href="#" class="contact__link">instagram</a>
-                    <a href="#" class="contact__link">telegram</a>
-                    <a href="#" class="contact__link">mail</a>
+                <div class="container">
+                    <form class="contact__form">
+                        <h2 class="contact__form-title">Для связи со мной заполните простую форму</h2>
+                        <div class="contact__form-wrapper">
+                            <input type="text" placeholder="Имя Фамилия" class="contact__form-input">
+                            <input type="email" placeholder="example@mail.com" class="contact__form-input">
+                        </div>
+                        <button class="contact__form-btn">Отправить</button>
+                    </form>
                 </div>
+
 
                 <img src="./resurs/cuate.png" alt="cuate" class="contact__img">
             </div>
@@ -223,10 +244,29 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="footer__titile">Портфолио фротнтенд-разработчика Саши Орлова</p>
-            <p class="footer__text">Все права защищены. 2023</p>
+            <div class="footer-wrapper">
+                <p class="footer__title">Портфолио фронтенд-разработчика Саши Орлова</p>
+
+                <ul class="footer__contact-wrapper">
+                    <li class="footer__contact-item">
+                        <a href="mailto:hello@mail.com" class="footer__contact">mail</a>
+                    </li>
+                    <li class="footer__contact-item">
+                        <a href="#" class="footer__contact">telegram</a>
+                    </li>
+                    <li class="footer__contact-item">
+                        <a href="#" class="footer__contact">instagram</a>
+                    </li>
+                </ul>
+
+                <p class="footer__text">Все права защищены. 2023</p>
+                <p class="footer__text">политика обработки данных</p>
+            </div>
+
         </div>
     </footer>
+
+    <script src="./js/burger.js"></script>
 </body>
 
 </html>
